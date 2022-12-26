@@ -1,0 +1,9 @@
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\bin\Debug\Windows-Forms-Application-Calculator.exe.config
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\bin\Debug\Windows-Forms-Application-Calculator.exe
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\bin\Debug\Windows-Forms-Application-Calculator.pdb
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\obj\Debug\Windows_Forms_Application_Calculator.CalculatorForm.resources
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\obj\Debug\Windows_Forms_Application_Calculator.Properties.Resources.resources
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\obj\Debug\Windows-Forms-Application-Calculator.csproj.GenerateResource.cache
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\obj\Debug\Windows-Forms-Application-Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\obj\Debug\Windows-Forms-Application-Calculator.exe
+C:\Users\Nenad\Desktop\Projekti\Calculator\Windows-Forms-Application-Calculator\obj\Debug\Windows-Forms-Application-Calculator.pdb
