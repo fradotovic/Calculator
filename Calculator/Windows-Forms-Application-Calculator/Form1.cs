@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace Windows_Forms_Application_Calculator
 {
+    
     public partial class CalculatorForm : Form
     {
         public CalculatorForm()
         {
             InitializeComponent();
         }
-
+        int brojac = 0;
         private void buttonClear_Click(object sender, EventArgs e)
         {
             this.labelResult.Text = "";
@@ -146,15 +147,7 @@ namespace Windows_Forms_Application_Calculator
             this.labelResult.Text = "";
         }
 
-        private void buttonPercentage_Click(object sender, EventArgs e)
-        {
-            if (this.labelResult.Text != "")
-            {
-                this.firstNumLabel.Text = this.labelResult.Text;
-            }
-            this.operatorLabel.Text = "%";
-            this.labelResult.Text = "";
-        }
+       
 
         private void EqualButton_Click(object sender, EventArgs e)
         {
@@ -202,10 +195,36 @@ namespace Windows_Forms_Application_Calculator
                         //operatorLabel.Text = "/";
                         break;
                     }
+                case "^2":
+                    {
+                        rezultat = Math.Pow(double.Parse(this.firstNumLabel.Text), 2);
+                        break;
+                    }
             }
             this.labelResult.Text = rezultat.ToString();
             this.firstNumLabel.Text = "";
             this.operatorLabel.Text = "";
+        }
+
+        private void buttonSquare_Click(object sender, EventArgs e)
+        {
+            
+            if (this.labelResult.Text != "")
+            {
+                this.firstNumLabel.Text = this.labelResult.Text;
+                this.operatorLabel.Text = "^2";
+            }
+
+            
+        }
+
+        private void UndoButton_Click(object sender, EventArgs e)
+        {
+
+            this.labelResult.Text = this.labelResult.Text.Substring(0,this.labelResult.Text.Length - 1);
+            
+            
+            
         }
     }
 }

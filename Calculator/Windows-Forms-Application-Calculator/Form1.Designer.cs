@@ -33,7 +33,7 @@ namespace Windows_Forms_Application_Calculator
             this.buttonDivision = new System.Windows.Forms.Button();
             this.buttonSeven = new System.Windows.Forms.Button();
             this.buttonSquare = new System.Windows.Forms.Button();
-            this.buttonPercentage = new System.Windows.Forms.Button();
+            this.UndoButton = new System.Windows.Forms.Button();
             this.buttonMinus = new System.Windows.Forms.Button();
             this.buttonSix = new System.Windows.Forms.Button();
             this.buttonFive = new System.Windows.Forms.Button();
@@ -60,7 +60,7 @@ namespace Windows_Forms_Application_Calculator
             this.buttonDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDivision.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDivision.ForeColor = System.Drawing.Color.Indigo;
-            this.buttonDivision.Location = new System.Drawing.Point(224, 226);
+            this.buttonDivision.Location = new System.Drawing.Point(84, 226);
             this.buttonDivision.Name = "buttonDivision";
             this.buttonDivision.Size = new System.Drawing.Size(64, 46);
             this.buttonDivision.TabIndex = 1;
@@ -92,19 +92,20 @@ namespace Windows_Forms_Application_Calculator
             this.buttonSquare.TabIndex = 5;
             this.buttonSquare.Text = "x^2";
             this.buttonSquare.UseVisualStyleBackColor = true;
+            this.buttonSquare.Click += new System.EventHandler(this.buttonSquare_Click);
             // 
-            // buttonPercentage
+            // UndoButton
             // 
-            this.buttonPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPercentage.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPercentage.ForeColor = System.Drawing.Color.Indigo;
-            this.buttonPercentage.Location = new System.Drawing.Point(84, 226);
-            this.buttonPercentage.Name = "buttonPercentage";
-            this.buttonPercentage.Size = new System.Drawing.Size(64, 46);
-            this.buttonPercentage.TabIndex = 7;
-            this.buttonPercentage.Text = "%";
-            this.buttonPercentage.UseVisualStyleBackColor = true;
-            this.buttonPercentage.Click += new System.EventHandler(this.buttonPercentage_Click);
+            this.UndoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UndoButton.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UndoButton.ForeColor = System.Drawing.Color.Indigo;
+            this.UndoButton.Location = new System.Drawing.Point(224, 226);
+            this.UndoButton.Name = "UndoButton";
+            this.UndoButton.Size = new System.Drawing.Size(64, 46);
+            this.UndoButton.TabIndex = 7;
+            this.UndoButton.Text = "->";
+            this.UndoButton.UseVisualStyleBackColor = true;
+            this.UndoButton.Click += new System.EventHandler(this.UndoButton_Click);
             // 
             // buttonMinus
             // 
@@ -344,7 +345,7 @@ namespace Windows_Forms_Application_Calculator
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(302, 490);
+            this.ClientSize = new System.Drawing.Size(299, 493);
             this.Controls.Add(this.firstNumLabel);
             this.Controls.Add(this.operatorLabel);
             this.Controls.Add(this.label2);
@@ -364,7 +365,7 @@ namespace Windows_Forms_Application_Calculator
             this.Controls.Add(this.buttonFive);
             this.Controls.Add(this.buttonSix);
             this.Controls.Add(this.buttonMinus);
-            this.Controls.Add(this.buttonPercentage);
+            this.Controls.Add(this.UndoButton);
             this.Controls.Add(this.buttonSquare);
             this.Controls.Add(this.buttonSeven);
             this.Controls.Add(this.buttonDivision);
@@ -382,7 +383,7 @@ namespace Windows_Forms_Application_Calculator
         private System.Windows.Forms.Button buttonDivision;
         private System.Windows.Forms.Button buttonSeven;
         private System.Windows.Forms.Button buttonSquare;
-        private System.Windows.Forms.Button buttonPercentage;
+        private System.Windows.Forms.Button UndoButton;
         private System.Windows.Forms.Button buttonMinus;
         private System.Windows.Forms.Button buttonSix;
         private System.Windows.Forms.Button buttonFive;
